@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uSf-67-o1o">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NotificationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50k-3i-y3g">
+                                <rect key="frame" x="127" y="318.5" width="121" height="30"/>
+                                <state key="normal" title="Go to next screen"/>
+                                <connections>
+                                    <segue destination="Xlx-uH-9ps" kind="show" id="iUP-Zq-x9B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification 1  nog niet geactiveerd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyR-SO-pVN">
+                                <rect key="frame" x="68.5" y="88" width="238" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification 2 nog niet geactiveerd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6k-68-pGh">
+                                <rect key="frame" x="69.5" y="122" width="236.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtH-1s-go6">
+                                <rect key="frame" x="137" y="164" width="101.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="50k-3i-y3g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Sz-yh-5oi"/>
+                            <constraint firstItem="BtH-1s-go6" firstAttribute="top" secondItem="R6k-68-pGh" secondAttribute="bottom" constant="24" id="8Mt-7q-IIu"/>
+                            <constraint firstItem="R6k-68-pGh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ivr-Tz-mTo"/>
+                            <constraint firstItem="BtH-1s-go6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MMc-nM-Fkj"/>
+                            <constraint firstItem="R6k-68-pGh" firstAttribute="top" secondItem="wyR-SO-pVN" secondAttribute="bottom" constant="16" id="c0h-uF-Iiv"/>
+                            <constraint firstItem="wyR-SO-pVN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="lpd-rD-VZM"/>
+                            <constraint firstItem="50k-3i-y3g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ntd-B1-5dD"/>
+                            <constraint firstItem="wyR-SO-pVN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ofG-dB-EU6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h7a-K8-me5"/>
+                    <connections>
+                        <outlet property="screenModeLabel" destination="BtH-1s-go6" id="2O2-Nz-kTd"/>
+                        <outlet property="textLabel1" destination="wyR-SO-pVN" id="YzT-T7-znG"/>
+                        <outlet property="textLabel2" destination="R6k-68-pGh" id="d6W-bS-pqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="434" y="-419"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="6So-nO-rLZ">
+            <objects>
+                <viewController id="Xlx-uH-9ps" customClass="ViewController2" customModule="NotificationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BB8-nr-wUK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hP4-Ai-Soq">
+                                <rect key="frame" x="101" y="87" width="173" height="30"/>
+                                <state key="normal" title="Activate First Notification">
+                                    <color key="titleColor" red="0.93333959580000003" green="0.93332207199999995" blue="0.93333393340000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="activateFirstNotificationTapped:" destination="Xlx-uH-9ps" eventType="touchUpInside" id="Gp4-Fd-adO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fss-fb-g9x">
+                                <rect key="frame" x="90" y="142" width="195" height="30"/>
+                                <state key="normal" title="Activate Second Notification">
+                                    <color key="titleColor" red="0.93333959580000003" green="0.93332207199999995" blue="0.93333393340000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="activateSecondNotificationTapped:" destination="Xlx-uH-9ps" eventType="touchUpInside" id="CNK-90-JqM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpN-qb-z3I">
+                                <rect key="frame" x="59" y="195" width="257" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Activate Seond Notification the wrong way">
+                                    <color key="titleColor" red="0.93333959580000003" green="0.93332207199999995" blue="0.93333393340000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="activateSecondNotficationTheWrongWayTapped:" destination="Xlx-uH-9ps" eventType="touchUpInside" id="hA3-8i-McH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73371487859999995" green="0.15267276760000001" blue="0.39605873819999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="fss-fb-g9x" firstAttribute="top" secondItem="hP4-Ai-Soq" secondAttribute="bottom" constant="24" id="93i-5b-ChL"/>
+                            <constraint firstItem="hP4-Ai-Soq" firstAttribute="top" secondItem="Kcj-pY-t6t" secondAttribute="top" constant="24" id="Pkj-ZW-A3t"/>
+                            <constraint firstItem="MpN-qb-z3I" firstAttribute="top" secondItem="fss-fb-g9x" secondAttribute="bottom" constant="24" id="TEc-d0-FnS"/>
+                            <constraint firstItem="MpN-qb-z3I" firstAttribute="centerX" secondItem="BB8-nr-wUK" secondAttribute="centerX" id="Z9m-du-CKX"/>
+                            <constraint firstItem="fss-fb-g9x" firstAttribute="centerX" secondItem="BB8-nr-wUK" secondAttribute="centerX" id="kkv-7R-znd"/>
+                            <constraint firstItem="hP4-Ai-Soq" firstAttribute="centerX" secondItem="BB8-nr-wUK" secondAttribute="centerX" id="tt1-LC-6wj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kcj-pY-t6t"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hUy-yp-S1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="-420"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hr2-bb-DIX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uSf-67-o1o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yr9-Dm-Fia">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kdc-kY-uVF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdZ-14-FeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-311" y="-419"/>
+        </scene>
+    </scenes>
+</document>
